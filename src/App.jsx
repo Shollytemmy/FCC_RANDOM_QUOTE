@@ -5,6 +5,10 @@ import './App.scss'
 function App() {
   const [count, setCount] = useState(0)
 
+  // $(document).ready(function(){
+  //   console.log("Document Document");
+  // })
+
   return (
     <div className="App">
       <h1>FCC Random Quote</h1>
