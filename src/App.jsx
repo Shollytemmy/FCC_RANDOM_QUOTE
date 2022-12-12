@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.scss'
+import { QuoteBoard } from '../Components/QuoteBoard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>FCC Random Quote</h1>
+      <QuoteBoard />
       
       
 
