@@ -1,14 +1,30 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.scss'
 import { QuoteBoard } from '../Components/QuoteBoard'
+import {Quotes} from "./Quote"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [quote, setQuote] = useState([])
+  // 
 
-  // $(document).ready(function(){
-  //   console.log("Document Document");
-  // })
+
+  const getRandomQuote = () =>{
+    let randomQuote = Math.floor(Math.random() * Quotes.length)
+    setQuote(Quotes[randomQuote])
+    
+  }
+
+  console.log(quote);
+
+ useEffect(() => {
+
+   getRandomQuote();
+  
+ },[]);
+
+
+  
 
   return (
     <div className="App">

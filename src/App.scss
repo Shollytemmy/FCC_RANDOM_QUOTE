@@ -8,14 +8,17 @@ body{
   margin: 0;
   padding: 0;
   border-radius: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  
   .App {
     color: $color;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 0px solid green;
-      height:100vh;
+     justify-content: center;
+       align-items: center;
+      border: 5px solid green;
+      // height:100vh;
   }
   
 }

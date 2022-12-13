@@ -1,4 +1,4 @@
-const Quotes = [
+export const Quotes = [
     {
         id: 1,
         authur: "Michael Jordan",
