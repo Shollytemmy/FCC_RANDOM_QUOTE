@@ -14,7 +14,7 @@ function App() {
     let randomQuote = Math.floor(Math.random() * Quotes.length)
     setQuote(Quotes[randomQuote]);
 
-    let str ="0123456789abcdef";
+     let str ="0123456789abcdef";
     let hexCode = ""
 
     for(let i = 0; i < 6; i++){
@@ -25,24 +25,29 @@ function App() {
 
 
     }
-    
+
   }
 
-  console.log(quote);
-  console.log(color)
+
+
 
  useEffect(() => {
+  getRandomQuote()
 
-   getRandomQuote();
-  
- },[]);
+ document.body.style.backgroundColor= color;
+  document.getElementsByClassName("quoteCard")[0].style.color= color
+   
+
+     
+   }, [quote]);
+
 
 
   
 
   return (
     <div className="App">
-      <QuoteBoard />
+      <QuoteBoard quote={quote} color= {color}  getRandomQuote={ getRandomQuote} />
       
       
 
@@ -53,3 +58,6 @@ function App() {
 }
 
 export default App
+
+
+/**animate__fadeOut */
