@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.scss'
-import { QuoteBoard } from '../Components/QuoteBoard'
+import  QuoteBoard  from '../Components/QuoteBoard'
 import {Quotes} from "./Quote"
 
 function App() {

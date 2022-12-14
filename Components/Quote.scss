@@ -14,6 +14,14 @@ $textColor: #000;
    min-height: 300px;
     background-color: $primar-color;
     color: $textColor;
+
+    .content{
+      border: 1px solid;
+      min-height: 96px;
+    }
+    .btn{
+      margin-bottom: 2.5rem;
+    }
        
    }
 }
