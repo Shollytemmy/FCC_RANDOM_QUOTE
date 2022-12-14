@@ -14,13 +14,24 @@ $textColor: #000;
    min-height: 300px;
     background-color: $primar-color;
     color: $textColor;
+    padding: 8px 10px;
 
     .content{
       border: 1px solid;
       min-height: 96px;
     }
-    .btn{
-      margin-bottom: 2.5rem;
+    .btn-div {
+      display: flex;
+      justify-content: flex-end;
+      .btn {
+          margin-bottom: 2.5rem;
+          padding: 8px 25px;
+        }
+    }
+
+    .authur{
+      display: flex;
+      justify-content: flex-end;
     }
        
    }

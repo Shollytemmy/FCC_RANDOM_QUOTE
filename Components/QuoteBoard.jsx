@@ -11,8 +11,8 @@ import "./Quote.scss"
             <small>{authur}</small>
 
             </div>
-            <div className="btn">
-              <button onClick={getRandomQuote}>Click</button>
+            <div className="btn-div">
+              <button onClick={getRandomQuote} className="btn">Click</button>
             </div>
  
           
