@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaQuoteLeft} from 'react-icons/fa'
 import "./Quote.scss"
 
  const QuoteBoard = ({quote, color,  getRandomQuote}) => {
@@ -6,7 +7,7 @@ import "./Quote.scss"
   return (
     <div className='Quote'>
         <div className="quoteCard">
-            <p className='content'>{content}</p>
+            <p className='content'><FaQuoteLeft /> {content}</p>
             <div className='authur'>
             <small>{authur}</small>
 
