@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaQuoteLeft} from 'react-icons/fa'
+import {CiTwitter} from 'react-icons/ci'
 import "./Quote.scss"
 
  const QuoteBoard = ({quote, color,  getRandomQuote}) => {
@@ -13,7 +14,12 @@ import "./Quote.scss"
 
             </div>
             <div className="btn-div">
-              <button onClick={getRandomQuote} className="btn">Click</button>
+              <div className="social-btn">
+                <CiTwitter />
+                <CiTwitter />
+
+              </div>
+              <button onClick={getRandomQuote} className="btn">New Quote</button>
             </div>
  
           

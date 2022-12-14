@@ -35,7 +35,8 @@ function App() {
   getRandomQuote()
 
  document.body.style.backgroundColor= color;
-  document.getElementsByClassName("quoteCard")[0].style.color= color
+  document.getElementsByClassName("quoteCard")[0].style.color= color;
+  document.getElementsByClassName("btn")[0].style.backgroundColor= color;
    
 
      
